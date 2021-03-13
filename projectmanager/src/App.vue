@@ -24,7 +24,7 @@
       <v-divider></v-divider>
 
       <v-list dense nav>
-        <v-list-item v-for="item in items" :key="item.title" link>
+        <v-list-item v-for="item in items" :key="item.title" link :to="item.to">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -36,7 +36,7 @@
       </v-list>
     </v-navigation-drawer>
     <v-main>
-      <Home/>
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
@@ -52,12 +52,12 @@ import {Component} from "vue-property-decorator";
     Home
   }
 })
-export default class App extends Vue{
+export default class App extends Vue {
   name = 'App'
   items = [
-    {title: 'Dashboard', icon: 'mdi-view-dashboard'},
-    {title: 'Projects', icon: 'mdi-image'},
-    {title: 'About', icon: 'mdi-help-box'}
+    {title: 'Dashboard', icon: 'mdi-view-dashboard', to: "/home"},
+    {title: 'Projects', icon: 'mdi-image', to: "/projects"},
+    {title: 'About', icon: 'mdi-help-box', to: "/about"}
   ]
   right = null
 }

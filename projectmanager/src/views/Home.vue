@@ -1,11 +1,84 @@
 ﻿<template>
-  <div>Home</div>
+  <page-layout>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+    <div>home</div>
+  </page-layout>
 </template>
 
 <script lang="ts">
 import {Vue, Component} from "vue-property-decorator";
+import PageLayout from "@/layouts/PageLayout.vue";
 
-@Component({})
+@Component({
+  components: {PageLayout}
+})
 export default class Home extends Vue {
   name = "Home"
 }

@@ -1,11 +1,14 @@
 ﻿<template>
-  <div></div>
+  <page-layout>About</page-layout>
 </template>
 
 <script lang="ts">
 import {Vue, Component} from "vue-property-decorator";
+import PageLayout from "@/layouts/PageLayout.vue";
 
-@Component({})
+@Component({
+  components: {PageLayout}
+})
 export default class About extends Vue {
   name = "About"
 }
